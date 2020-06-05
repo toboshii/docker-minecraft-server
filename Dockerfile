@@ -15,7 +15,8 @@ RUN apk add --no-cache -U \
   mysql-client \
   tzdata \
   rsync \
-  nano
+  nano \
+  ttf-dejavu 
 
 HEALTHCHECK --start-period=1m CMD mc-monitor status --host localhost --port $SERVER_PORT
 
