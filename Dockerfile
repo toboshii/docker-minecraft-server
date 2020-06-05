@@ -16,7 +16,7 @@ RUN apk add --no-cache -U \
   tzdata \
   rsync \
   nano \
-  ttf-dejavu 
+  ttf-dejavu
 
 HEALTHCHECK --start-period=1m CMD mc-monitor status --host localhost --port $SERVER_PORT
 
